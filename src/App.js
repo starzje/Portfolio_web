@@ -1,24 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import { motion } from "framer-motion";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="min-h-screen bg-[#120C5C] bg-hero-pattern2 bg-cover  2xl:bg-contain bg-right md:bg-center bg-no-repeat sticky top-0 left-0 right-0 z-0"></div>
+      <motion.div className="absolute bottom-0 left-0 right-0    z-20">
+        <img className="w-full " src="./assets/floor.svg" />
+        <div className="bg-[#120C5C] pt-0"></div>
+      </motion.div>
+    </>
   );
 }
 
