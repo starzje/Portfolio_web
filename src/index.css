@@ -5,3 +5,9 @@
 body {
   background-color: #120c5c;
 }
+
+.scrollDown {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}

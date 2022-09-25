@@ -15,8 +15,13 @@ module.exports = {
     extend: {
       backgroundImage: {
         "hero-pattern2": "url('./assets/background_svg.svg')",
-        "section-pattern": "url('./assets/background_2ndsection.png')",
+        "section-pattern2": "url('./assets/background_2ndsection.png')",
+        "section-pattern": "url('./assets/background_2ndsection.svg')",
+        "section-pattern3": "url('./assets/background_2ndsection2.svg')",
         "floor-pattern": "url('./assets/floor.svg')",
+        "section-3-pattern": "url('./assets/bg_3.jpg')",
+        // "bottom-pattern": "url('./assets/bottom_1.svg')",
+        // "bottom-pattern2": "url('./assets/bottom_2.svg')",
       },
     },
   },
