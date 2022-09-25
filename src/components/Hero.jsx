@@ -141,7 +141,7 @@ const Hero = ({ fullpageApi }) => {
         <div className="h-[calc(100vh-4em)]  flex justify-start pt-20 md:pt-0 md:justify-center flex-col items-center pb-20 ">
           <div className="text-white text-center  ">
             <h1 className="text-[2rem] md:text-[3rem] uppercase font-extrabold leading-[40px] md:leading-[50px]">
-              Turning your <br /> ideas into reality
+              Turn your <br /> ideas into reality
             </h1>
 
             <p className="text-[1.7rem] md:text-[2.2rem] mt-2 font-light leading-[30px] md:leading-10 tracking-wide">

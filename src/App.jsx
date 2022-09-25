@@ -2,6 +2,8 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import "./fullpage.parallax.min";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 const pluginWrapper = () => {
   require("./fullpage.parallax.min");
@@ -28,15 +30,8 @@ const App = () => (
         <ReactFullpage.Wrapper>
           <Hero fullpageApi={fullpageApi} />
           <About />
-          <div className="section  fp-auto-height min-h-screen bg-gradient-to-b from-[#171277] to-blue-800">
-            <h2>Featured Projects</h2>
-            <button onClick={() => fullpageApi.moveSectionDown()}>
-              Click me to move down
-            </button>
-          </div>
-          <div className="section bg-zinc-900 min-h-screen">
-            <p>Section 2 blue</p>
-          </div>
+          <Projects />
+          <Contact />
         </ReactFullpage.Wrapper>
       );
     }}
