@@ -8,9 +8,7 @@ const Contact = () => {
         <h3 className="text-5xl text-white font-bold mb-2">
           Like what you see?
         </h3>
-        <p className="text-white text-2xl mb-6 text-center font-extralight">
-          Send me a message.
-        </p>
+
         <Form />
       </div>
     </div>
