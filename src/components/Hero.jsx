@@ -24,10 +24,12 @@ const Hero = ({ fullpageApi }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className=" fp-bg relative overflow-y-visible  section h-[120vh] 2xl:h-screen   bg-[#120C5C] bg-hero-pattern2 bg-cover  2xl:bg-contain bg-center 2xl:bg-center md:bg-right  ">
+      className=" fp-bg relative overflow-y-visible  section h-[120vh] 2xl:h-screen   bg-[#120C5C]  ">
+      <div className="fp-bg bg-hero-pattern2 bg-cover  2xl:bg-contain bg-center 2xl:bg-center md:bg-right "></div>
       <div className="inline-block md:hidden absolute top-2 right-2 z-50">
         <Hamburger color="#fff" toggled={isOpen} toggle={setOpen} />
       </div>
+
       {/* MOBILE */}
       <div className="relative z-10">
         <AnimatePresence>
@@ -117,7 +119,7 @@ const Hero = ({ fullpageApi }) => {
             delay: 0.3,
           }}
           className="h-[4em] flex  justify-between  items-center gap-10">
-          <span className="text-white font-extrabold tracking-wider">
+          <span className="text-white font-extrabold tracking-wider cursor-default select-none">
             Ivan Starčević
           </span>
           <nav className="hidden md:inline-block ml-auto">
@@ -157,15 +159,21 @@ const Hero = ({ fullpageApi }) => {
               ))}
             </motion.ul>
           </nav>
-          <a
-            className="bg-black hover:bg-[#3f36a1] hidden md:inline-block font-semibold   py-2 px-5 text-white rounded-2xl tracking-wider"
+          <motion.a
+            whileHover={{
+              scale: 1.05,
+              backgroundColor: "#15104c",
+            }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ duration: 0.3 }}
+            className="bg-black   hidden md:inline-block font-semibold   py-2 px-5 text-white rounded-2xl tracking-wider"
             href="https://drive.google.com/file/d/1xVG4SlV-Ud-008cWq5dzTNgmxHylGeQ5/view?usp=sharing"
             target="_blank"
             rel="noreferrer">
             Download CV
-          </a>
+          </motion.a>
         </motion.header>
-        <div className="h-[calc(100vh-4em)]  flex justify-start pt-20 md:pt-0 md:justify-center flex-col items-center pb-20 ">
+        <div className="h-[calc(100vh-4em)]  flex justify-start pt-20 md:pt-0 md:justify-center flex-col items-center pb-28 ">
           <div className="text-white text-center  ">
             <motion.h1
               initial={{ opacity: 0, y: -100 }}
@@ -245,8 +253,9 @@ const Hero = ({ fullpageApi }) => {
 
             repeat: Infinity,
           }}
-          className="scrollDown hidden md:block fixed text-[0.7rem] bottom-[160px] 
-        left-[100px] 2xl:bottom-[300px] leading-[1px] tracking-[0.3em] text-white  z-0  content-none font-semibold 2xl:font-bold after:w-[2px] after:h-[140px] after:bg-white after:absolute after:left-0 after:right:0 after:m-auto after:bottom-[-160px]">
+          onClick={() => fullpageApi.moveSectionDown()}
+          className="scrollDown  fixed text-[0.7rem] bottom-[130px] md:bottom-[160px] 
+        left-[50%] md:left-[100px] 2xl:bottom-[300px] leading-[1px] tracking-[0.3em] text-white  z-0  content-none font-semibold 2xl:font-bold after:w-[2px] after:h-[140px] after:bg-white after:absolute after:left-0 after:right:0 after:m-auto after:bottom-[-160px] cursor-pointer">
           SCROLLDOWN
         </motion.p>
       </div>

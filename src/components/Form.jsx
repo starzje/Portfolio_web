@@ -46,7 +46,7 @@ const Form = () => {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="flex w-full md:w-[25em] bg-gradient-to-r from-[#19126d] to-[#1f186c]  flex-col space-y-5 rounded-2xl mt-5  py-7 px-5 opacity-90">
+        className="flex w-full md:w-[25em] bg-gradient-to-r from-[#19126d] to-[#1f186c]  flex-col space-y-5 rounded-2xl mt-5  py-7 px-5 opacity-100 md:opacity-90">
         <p className="text-white text-2xl  font-extralight">
           Send me a message.
         </p>

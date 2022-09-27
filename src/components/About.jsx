@@ -29,10 +29,10 @@ const About = () => {
               duration: 1,
               delay: 0.2,
             }}>
-            <h2 className="text-5xl font-bold  text-white mt-4 mb-4">
+            <h2 className=" text-[2rem] md:text-5xl font-bold  text-white pt-10 mt-4 mb-4">
               Why me?
             </h2>
-            <p className="text-white max-w-xl text-[1.1rem] ">
+            <p className="text-white max-w-xl text-[1rem] md:text-[1.1rem] ">
               I'm a front-end developer with a strong background in design. I
               have a passion for creating beautiful and functional websites. I'm
               always looking for new challenges and opportunities to learn and
@@ -64,7 +64,7 @@ const About = () => {
             delay: 0.2,
           }}
           viewport={{ once: true }}
-          className="w-full"
+          className="w-full "
           src="./assets/bottom_1_1.svg"></motion.img>
       </div>
     </motion.div>

@@ -19,8 +19,11 @@ module.exports = {
       backgroundImage: {
         "hero-pattern2": "url('./assets/background_svg3.svg')",
 
-        "footer-pattern": "url('./assets/footer_bg.svg')",
+        // "footer-pattern": "url('./assets/footer_bg.png')",
+        // "footer-pattern2": "url('./assets/footer_bg.svg')",
         "stars-pattern": "url('./assets/stars.svg')",
+        "bg-pattern":
+          "url('./assets/aside.png'), linear-gradient(#171277, #140057)",
       },
     },
   },

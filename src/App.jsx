@@ -18,7 +18,7 @@ const App = () => (
     parallaxOptions={{
       type: "cover",
       percentage: 30,
-      property: "background",
+      property: "translate",
     }}
     bigSectionsDestination={"bottom"}
     autoScrolling={true}
