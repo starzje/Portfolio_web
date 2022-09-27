@@ -51,16 +51,16 @@ const Projects = () => {
       </motion.a>
 
       <div className="flex h-screen justify-center items-center">
-        <div className="container mt-10  ">
-          <h3 className="text-[2rem] md:text-5xl  text-white font-bold pb-7">
-            Featured Projects
+        <div className="container mt-0 md:mt-10  ">
+          <h3 className="text-[2rem] md:text-5xl  text-white font-bold pb-2 md:pb-7">
+            Featured Project
           </h3>
-          <div className="bg-gradient-to-bl from-[rgba(1,87,218,0.15)] to-[rgba(0,0,0,0.01)]  flex justify-around drop-shadow-2xl items-center">
-            <div className="w-[20em] ">
+          <div className="bg-gradient-to-bl from-[rgba(1,87,218,0.15)] to-[rgba(0,0,0,0.01)]  flex flex-col justify-center md:flex-row md:justify-around drop-shadow-2xl items-center">
+            <div className="w-[10em] md:w-[20em] ">
               {" "}
-              <img src="./assets/mockup.png" alt="" className="w-full" />
+              <img src="./assets/mockup.png" alt="" className="block w-full" />
             </div>
-            <div className="w-1/2 border-l-4 pl-6 border-opacity-20 border-blue-600">
+            <div className="w-full md:w-1/2  border-l-4 pl-6 border-opacity-20 border-blue-600">
               <h3 className="text-white text-[1.5rem] md:text-3xl mb-6 font-bold">
                 Chattam - Chat App
               </h3>
@@ -70,7 +70,7 @@ const Projects = () => {
                 other users in real time. Users can also create and join rooms
                 to chat with other users in a specific room.
               </p>
-              <ul className="flex flex-wrap gap-5  ">
+              <ul className="flex flex-wrap gap-3 md:gap-5  ">
                 {techStack.map((tech) => (
                   <TechStack
                     icon={tech.icon}
@@ -78,24 +78,24 @@ const Projects = () => {
                     key={tech.icon}
                   />
                 ))}
-                <li className="flex items-center  gap-2 py-1 px-3 rounded-xl text-white bg-[rgba(107,77,255,0.17)] text-[0.9rem] ">
-                  <img src="./assets/fmotion.svg" className="w-[12px]" />
+                <li className="flex items-center  select-none gap-2 py-1 px-3 rounded-xl text-white bg-[rgba(107,77,255,0.17)] text-[0.75rem] md:text-[0.9rem] ">
+                  <img src="./assets/fmotion.svg" className=" w-[12px]" />
                   <span>FramerMotion</span>
                 </li>
               </ul>
-              <div className="flex gap-10 items-center mt-8">
+              <div className="flex gap-5 md:gap-10 items-center mt-8">
                 <a
-                  href="https://www.google.com"
+                  href="https://chattam.online"
                   target="_blank"
                   rel="noreferrer"
-                  className="bg-[#1F1CA1] w-full text-white rounded-xl py-1.5 px-5  font-bold text-[1rem] text-center md:text-1.2xl">
+                  className="bg-[#1F1CA1] hover:bg-[#2826b0] transition duration-300 w-full text-white rounded-xl py-1.5 px-5  font-bold text-[0.9rem] text-center md:text-[1rem] whitespace-nowrap">
                   View Project
                 </a>
                 <a
-                  href="https://www.google.com"
+                  href="https://github.com/starzje/ChatTam-Chat-App"
                   target="_blank"
                   rel="noreferrer"
-                  className="bg-[#1F1CA1] w-full text-white text-center rounded-xl py-1.5 px-5  font-bold text-[1rem] md:text-1.2xl">
+                  className="bg-[#1F1CA1] hover:bg-[#2826b0] transition duration-300  w-full text-white text-center rounded-xl py-1.5 px-5  font-bold text-[0.9rem] md:text-[1rem]">
                   View Code
                 </a>
               </div>

@@ -11,7 +11,6 @@ const pluginWrapper = () => {
 
 const App = () => (
   <ReactFullpage
-    loopBottom={true}
     pluginWrapper={pluginWrapper}
     parallax={true}
     verticalCentered={false}

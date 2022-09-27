@@ -104,6 +104,21 @@ const Hero = ({ fullpageApi }) => {
                   rel="noreferrer">
                   Download CV
                 </motion.a>
+                <motion.a
+                  layout
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{
+                    duration: 0.6,
+                    delay: 0.3,
+                  }}
+                  className=" top-3 left-4 absolute z-100 "
+                  href="https://github.com/starzje"
+                  target="_blank">
+                  <motion.i
+                    layout
+                    className="devicon-github-original text-4xl text-white hover:text-blue-600 transition duration-300"></motion.i>
+                </motion.a>
               </div>
             </motion.div>
           )}

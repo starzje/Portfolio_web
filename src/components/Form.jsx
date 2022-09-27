@@ -46,7 +46,7 @@ const Form = () => {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="flex w-full md:w-[25em] bg-gradient-to-r from-[#19126d] to-[#1f186c]  flex-col space-y-5 rounded-2xl mt-5  py-7 px-5 opacity-100 md:opacity-90">
+        className="flex w-full md:w-[25em] bg-gradient-to-r from-[#19126d] to-[#1a145c]  flex-col space-y-5 rounded-2xl mt-5  py-7 px-5 shadow-xl opacity-100 md:opacity-90">
         <p className="text-white text-2xl  font-extralight">
           Send me a message.
         </p>
@@ -64,7 +64,7 @@ const Form = () => {
             />
             <label
               htmlFor="name"
-              className="absolute top-2 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform cursor-text select-none bg-[#19126d]  px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-blue-600 font-light">
+              className="absolute top-2 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform cursor-text select-none bg-[#19126d]  px-2 text-sm text-[#ffffff5a] duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-blue-600 font-light">
               {" "}
               Enter Your Name{" "}
             </label>
@@ -86,7 +86,7 @@ const Form = () => {
             />
             <label
               htmlFor="email"
-              className="absolute top-2 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform cursor-text select-none bg-[#19126d]  px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-blue-600 font-light">
+              className="absolute top-2 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform cursor-text select-none bg-[#19126d]  px-2 text-sm text-[#ffffff5a] duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-blue-600 font-light">
               {" "}
               Enter Your Email{" "}
             </label>
@@ -107,7 +107,7 @@ const Form = () => {
             />
             <label
               htmlFor="textarea"
-              className="absolute top-2 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform cursor-text select-none bg-[#19126d]  px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-[25px] peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-blue-600 font-light">
+              className="absolute top-2 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform cursor-text select-none bg-[#19126d]  px-2 text-sm text-[#ffffff5a] duration-300 peer-placeholder-shown:top-[25px] peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-blue-600 font-light">
               {" "}
               Enter Your Message
             </label>
