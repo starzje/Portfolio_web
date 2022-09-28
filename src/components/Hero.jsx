@@ -25,7 +25,7 @@ const Hero = ({ fullpageApi }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className=" fp-bg relative overflow-y-visible  section h-screen 2xl:h-screen   bg-[#120C5C]  ">
+      className=" fp-bg relative overflow-y-visible  section h-[100%] 2xl:h-screen   bg-[#120C5C]  ">
       <div className="fp-bg bg-hero-pattern2 bg-cover  2xl:bg-contain bg-center 2xl:bg-center md:bg-right "></div>
       <div className="inline-block md:hidden absolute top-2 right-2 z-50">
         <Hamburger color="#fff" toggled={isOpen} toggle={setOpen} />

@@ -27,7 +27,7 @@ const App = () => (
       "Zk1hWFpoYmkxemRHRnlZMlYyYVdNdVkyOXRBcl9FWUljR0Z5WVd4c1lYZz00QXY="
     }
     licenseKey={"K4C1H-Q7U3H-W65K9-92JFJ-RNBUP"}
-    anchors={["Home", "About", "Work", "Contact"]}
+    anchors={["home", "about", "work", "contact"]}
     render={({ state, fullpageApi }) => {
       return (
         <ReactFullpage.Wrapper>
