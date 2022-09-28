@@ -2,6 +2,12 @@ import TechStack from "./TechStack";
 import { motion } from "framer-motion";
 import { FiExternalLink } from "react-icons/fi";
 import { BiCodeAlt } from "react-icons/bi";
+import {
+  githubCTA,
+  projectTitle,
+  mockupImage,
+  projectDescription,
+} from "../helpers/animations";
 
 const Projects = () => {
   const techStack = [
@@ -28,18 +34,9 @@ const Projects = () => {
       className="section relative fp-auto-height 
     bg-bg-pattern   min-h-screen  bg-contain bg-left-top bg-no-repeat ">
       <motion.a
-        initial={{
-          x: 500,
-        }}
-        whileHover={{
-          x: 140,
-          backgroundColor: "rgba(1,87,218,0.35)",
-        }}
-        transition={{
-          duration: 2,
-          type: "spring",
-          stiffness: 70,
-        }}
+        variants={githubCTA}
+        initial="hidden"
+        whileHover="visible"
         href="https://github.com/starzje"
         target="_blank"
         className="text-white cursor-pointer text-[1.1rem] flex justify-center items-center bg-gradient-to-t from-[rgba(1,87,218,0.15)] to-[rgba(0,0,0,0.01)] absolute py-2 px-5 rounded-l-full top-[60px] shadow-2xl  right-0 pr-48">
@@ -55,18 +52,10 @@ const Projects = () => {
       <div className="flex h-screen justify-center items-center">
         <div className="container mt-0 md:mt-10  ">
           <motion.h3
+            variants={projectTitle}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true }}
-            initial={{
-              x: -200,
-            }}
-            whileInView={{
-              x: 0,
-            }}
-            transition={{
-              duration: 2,
-              type: "spring",
-              stiffness: 70,
-            }}
             className="text-[2rem] md:text-5xl pt-10 md:pt-0  text-white font-bold pb-2 md:pb-7">
             Featured Project
           </motion.h3>
@@ -74,38 +63,20 @@ const Projects = () => {
             <div className="w-[10em] md:w-[20em]  ">
               {" "}
               <motion.img
+                variants={mockupImage}
+                initial="hidden"
+                whileInView="visible"
                 viewport={{ once: true }}
-                initial={{
-                  x: -100,
-                }}
-                whileInView={{
-                  x: 0,
-                }}
-                transition={{
-                  duration: 2,
-                  type: "spring",
-                  stiffness: 70,
-                }}
                 src="./assets/mockup.png"
                 alt="project"
                 className=" block w-full "
               />
             </div>
             <motion.div
+              variants={projectDescription}
+              initial="hidden"
+              whileInView="visible"
               viewport={{ once: true }}
-              initial={{
-                opacity: 0,
-                x: 100,
-              }}
-              whileInView={{
-                opacity: 100,
-                x: 0,
-              }}
-              transition={{
-                duration: 2,
-                type: "spring",
-                stiffness: 70,
-              }}
               className="w-full md:w-1/2  border-l-4 px-6  border-opacity-20 border-blue-600">
               <h3 className="text-white text-[1.5rem] md:text-3xl mb-6 font-bold">
                 Chattam - Chat App

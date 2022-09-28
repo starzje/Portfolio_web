@@ -3,11 +3,24 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Pivot as Hamburger } from "hamburger-react";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import uuid4 from "uuid4";
+// animations
+import {
+  mainSectionAnimation,
+  mobileNavSlider,
+  mobileListItem,
+  mobileButtonItem,
+  githubIconAnimation,
+  headerAnimation,
+  titleAnimation,
+  subTitleAnimation,
+  paragraphAnimation,
+  buttonAnimation,
+} from "../helpers/animations";
 
 const menu = [
-  { name: "About", link: "#About" },
-  { name: "Projects", link: "#Work" },
-  { name: "Contact", link: "#Contact" },
+  { name: "About", link: "#about" },
+  { name: "Projects", link: "#work" },
+  { name: "Contact", link: "#contact" },
 ];
 
 const Hero = ({ fullpageApi }) => {
@@ -22,9 +35,9 @@ const Hero = ({ fullpageApi }) => {
 
   return (
     <motion.main
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+      variants={mainSectionAnimation}
+      initial="hidden"
+      animate="visible"
       className=" fp-bg relative overflow-y-visible mobile-fix  section h-[100%] md:h-screen   bg-[#120C5C]  ">
       <div className="fp-bg bg-hero-pattern2 bg-cover  2xl:bg-contain bg-center 2xl:bg-center md:bg-right "></div>
       <div className="inline-block md:hidden absolute top-2 right-2 z-50">
@@ -37,24 +50,17 @@ const Hero = ({ fullpageApi }) => {
           {isOpen && (
             <motion.div
               key={uuid4()}
-              initial={{
-                opacity: 0,
-                x: "100vw",
-              }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-              exit={{ opacity: 0, x: "100vw" }}
-              className="fixed  -right-0 mobile-fix   w-screen fullheight md:h-screen overflow-hidden bg-slate-900 bg-opacity-100 z-[100]  border-2 border-red-500">
+              variants={mobileNavSlider}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              className="fixed  -right-0 mobile-fix   w-screen fullheight md:h-screen overflow-hidden bg-slate-900 bg-opacity-100 z-[100]  ">
               <div className=" flex flex-col items-center justify-center h-full">
                 {menu.map((item) => (
                   <motion.li
-                    initial={{ opacity: 0, y: 100 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{
-                      duration: 0.4,
-
-                      type: "spring",
-                    }}
+                    variants={mobileListItem}
+                    initial="hidden"
+                    whileInView="visible"
                     key={uuid4()}
                     className="
                   mb-10
@@ -92,13 +98,9 @@ const Hero = ({ fullpageApi }) => {
                 ))}
                 <motion.a
                   layout
-                  initial={{ opacity: 0, y: 100 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: 0.6,
-                    delay: 0.3,
-                    type: "spring",
-                  }}
+                  variants={mobileButtonItem}
+                  initial="hidden"
+                  whileInView="visible"
                   className="bg-[#1F1CA1] hover:bg-[#2826b0] inline-block font-semibold text-center text-2xl  py-2 px-5 text-white rounded-2xl tracking-wider"
                   href="https://drive.google.com/file/d/1xVG4SlV-Ud-008cWq5dzTNgmxHylGeQ5/view?usp=sharing"
                   target="_blank"
@@ -107,12 +109,9 @@ const Hero = ({ fullpageApi }) => {
                 </motion.a>
                 <motion.a
                   layout
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{
-                    duration: 0.6,
-                    delay: 0.3,
-                  }}
+                  variants={githubIconAnimation}
+                  initial="hidden"
+                  whileInView="visible"
                   className=" top-3 left-4 absolute z-100 "
                   href="https://github.com/starzje"
                   target="_blank">
@@ -128,12 +127,9 @@ const Hero = ({ fullpageApi }) => {
       {/* DESKTOP */}
       <div className="container">
         <motion.header
-          initial={{ opacity: 0, y: -100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: 1,
-            delay: 0.3,
-          }}
+          variants={headerAnimation}
+          initial="hidden"
+          animate="visible"
           className="h-[4em] flex  justify-between  items-center gap-10">
           <span className="text-white font-extrabold tracking-wider cursor-default select-none">
             Ivan Starčević
@@ -193,48 +189,33 @@ const Hero = ({ fullpageApi }) => {
         <div className="h-[100%] md:h-[calc(100vh-4em)]  flex justify-start pt-20 md:pt-0 md:justify-center flex-col items-center pb-28 ">
           <div className="text-white text-center  ">
             <motion.h1
-              initial={{ opacity: 0, y: -100 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 1,
-                delay: 0.5,
-              }}
+              variants={titleAnimation}
+              initial="hidden"
+              animate="visible"
               className="text-[2rem] md:text-[3rem] uppercase font-extrabold leading-[40px] md:leading-[50px] ">
               Turn your ideas
               <br />{" "}
               <motion.span
-                initial={{ opacity: 0, y: -100 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 1,
-                  delay: 1,
-                  type: "spring",
-                }}>
+                variants={subTitleAnimation}
+                initial="hidden"
+                animate="visible">
                 into reality
               </motion.span>
             </motion.h1>
 
             <motion.p
               layout
-              initial={{ y: -20, opacity: 0, scale: 1 }}
-              animate={{ y: 0, opacity: 1, scale: 1 }}
-              transition={{
-                duration: 1,
-                delay: 1,
-              }}
+              variants={paragraphAnimation}
+              initial="hidden"
+              animate="visible"
               className="text-[1.7rem] md:text-[2rem] mt-2 font-light leading-[30px] md:leading-10 tracking-wide  ">
               You just need to take the first step.
             </motion.p>
           </div>
           <motion.div
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 1.8,
-              delay: 1,
-              type: "spring",
-              stiffness: 30,
-            }}
+            variants={buttonAnimation}
+            initial="hidden"
+            animate="visible"
             className="flex gap-3 md:gap-5 flex-col md:flex-row md:p-0 px-10 justify-center items-center w-full md:w-[28em] mt-8 font-semibold text-[1.2rem]">
             <motion.button
               whileHover={{
@@ -271,7 +252,7 @@ const Hero = ({ fullpageApi }) => {
             repeat: Infinity,
           }}
           onClick={() => fullpageApi.moveSectionDown()}
-          className="scrollDown  fixed text-[0.7rem] bottom-[130px] md:bottom-[160px] 
+          className="scrollDown  hidden md:inline-block fixed text-[0.7rem] bottom-[130px] md:bottom-[160px] 
         left-[50%] md:left-[100px] 2xl:bottom-[300px] leading-[1px] tracking-[0.3em] text-white  z-0  content-none font-semibold 2xl:font-bold after:w-[2px] after:h-[140px] after:bg-white after:absolute after:left-0 after:right:0 after:m-auto after:bottom-[-160px] cursor-pointer">
           SCROLLDOWN
         </motion.p>

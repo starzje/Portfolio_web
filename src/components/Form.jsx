@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import { motion } from "framer-motion";
 import { RiMailSendLine } from "react-icons/ri";
+import { formAnimation } from "../helpers/animations";
 
 const Form = () => {
   const form = useRef();
@@ -46,14 +47,9 @@ const Form = () => {
   return (
     <>
       <motion.form
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{
-          duration: 1,
-          delay: 0.2,
-          type: "spring",
-          stiffness: 70,
-        }}
+        variants={formAnimation}
+        initial="hidden"
+        whileInView="visible"
         viewport={{ once: true }}
         ref={form}
         onSubmit={sendEmail}
