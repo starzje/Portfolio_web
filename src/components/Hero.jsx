@@ -25,7 +25,7 @@ const Hero = ({ fullpageApi }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className=" fp-bg relative overflow-y-visible  section h-[100%] 2xl:h-screen   bg-[#120C5C]  ">
+      className=" fp-bg relative overflow-y-visible mobile-fix  section h-[100%] md:h-screen   bg-[#120C5C]  ">
       <div className="fp-bg bg-hero-pattern2 bg-cover  2xl:bg-contain bg-center 2xl:bg-center md:bg-right "></div>
       <div className="inline-block md:hidden absolute top-2 right-2 z-50">
         <Hamburger color="#fff" toggled={isOpen} toggle={setOpen} />
@@ -44,7 +44,7 @@ const Hero = ({ fullpageApi }) => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
               exit={{ opacity: 0, x: "100vw" }}
-              className="absolute -right-0  overflow-hidden w-screen h-screen overflow-y-auto bg-slate-900 bg-opacity-100 z-10">
+              className="absolute -right-0 mobile-fix  overflow-hidden w-screen h-[100%] md:h-screen overflow-y-auto bg-slate-900 bg-opacity-100 z-10">
               <div className=" flex flex-col items-center justify-center h-full">
                 {menu.map((item) => (
                   <motion.li
@@ -190,7 +190,7 @@ const Hero = ({ fullpageApi }) => {
             Download CV
           </motion.a>
         </motion.header>
-        <div className="h-[calc(100vh-4em)]  flex justify-start pt-20 md:pt-0 md:justify-center flex-col items-center pb-28 ">
+        <div className="h-[100%] md:h-[calc(100vh-4em)]  flex justify-start pt-20 md:pt-0 md:justify-center flex-col items-center pb-28 ">
           <div className="text-white text-center  ">
             <motion.h1
               initial={{ opacity: 0, y: -100 }}
