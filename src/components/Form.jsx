@@ -1,6 +1,8 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import { motion } from "framer-motion";
+import { RiMailSendLine } from "react-icons/ri";
 
 const Form = () => {
   const form = useRef();
@@ -43,7 +45,16 @@ const Form = () => {
 
   return (
     <>
-      <form
+      <motion.form
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{
+          duration: 1,
+          delay: 0.2,
+          type: "spring",
+          stiffness: 70,
+        }}
+        viewport={{ once: true }}
         ref={form}
         onSubmit={sendEmail}
         className="flex w-full md:w-[25em] bg-gradient-to-r from-[#19126d] to-[#1a145c]  flex-col space-y-5 rounded-2xl mt-5  py-7 px-5 shadow-xl opacity-100 md:opacity-90">
@@ -114,10 +125,10 @@ const Form = () => {
           </div>
         </div>
 
-        <button className="rounded-lg bg-[#1F1CA1] hover:bg-[#2826b0] transition duration-300 py-3 font-bold text-white">
-          Send
+        <button className="rounded-lg bg-[#1F1CA1] hover:bg-[#2826b0] transition duration-300 py-3 font-bold text-white flex justify-center items-center gap-2">
+          Send <RiMailSendLine />
         </button>
-      </form>
+      </motion.form>
     </>
   );
 };

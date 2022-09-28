@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <motion.div
+    <motion.section
       initial={{
         y: 100,
       }}
@@ -67,7 +67,7 @@ const About = () => {
           className="w-full "
           src="./assets/bottom_1_1.svg"></motion.img>
       </div>
-    </motion.div>
+    </motion.section>
   );
 };
 

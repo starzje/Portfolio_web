@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Pivot as Hamburger } from "hamburger-react";
+import { AiOutlineCloudDownload } from "react-icons/ai";
 import uuid4 from "uuid4";
 
 const menu = [
@@ -20,7 +21,7 @@ const Hero = ({ fullpageApi }) => {
   }, [fullpageApi, isOpen]);
 
   return (
-    <motion.div
+    <motion.main
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -98,7 +99,7 @@ const Hero = ({ fullpageApi }) => {
                     delay: 0.3,
                     type: "spring",
                   }}
-                  className="bg-[#1F1CA1] hover:bg-[#3f36a1] inline-block font-semibold text-center text-2xl  py-2 px-5 text-white rounded-2xl tracking-wider"
+                  className="bg-[#1F1CA1] hover:bg-[#2826b0] inline-block font-semibold text-center text-2xl  py-2 px-5 text-white rounded-2xl tracking-wider"
                   href="https://drive.google.com/file/d/1xVG4SlV-Ud-008cWq5dzTNgmxHylGeQ5/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer">
@@ -181,10 +182,11 @@ const Hero = ({ fullpageApi }) => {
             }}
             whileTap={{ scale: 0.95 }}
             transition={{ duration: 0.3 }}
-            className="bg-black   hidden md:inline-block font-semibold   py-2 px-5 text-white rounded-2xl tracking-wider"
+            className="bg-black   hidden md:flex font-semibold   py-2 px-5 text-white rounded-xl tracking-wider justify-center items-center gap-2"
             href="https://drive.google.com/file/d/1xVG4SlV-Ud-008cWq5dzTNgmxHylGeQ5/view?usp=sharing"
             target="_blank"
             rel="noreferrer">
+            <AiOutlineCloudDownload className="text-lg" />
             Download CV
           </motion.a>
         </motion.header>
@@ -221,7 +223,7 @@ const Hero = ({ fullpageApi }) => {
                 delay: 1,
               }}
               className="text-[1.7rem] md:text-[2rem] mt-2 font-light leading-[30px] md:leading-10 tracking-wide  ">
-              Be bold. Be different. Be remembered.
+              You just need to take the first step.
             </motion.p>
           </div>
           <motion.div
@@ -274,7 +276,7 @@ const Hero = ({ fullpageApi }) => {
           SCROLLDOWN
         </motion.p>
       </div>
-    </motion.div>
+    </motion.main>
   );
 };
 
