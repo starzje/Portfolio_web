@@ -67,7 +67,7 @@ const Projects = () => {
               type: "spring",
               stiffness: 70,
             }}
-            className="text-[2rem] md:text-5xl pt-5  text-white font-bold pb-2 md:pb-7">
+            className="text-[2rem] md:text-5xl pt-10 md:pt-0  text-white font-bold pb-2 md:pb-7">
             Featured Project
           </motion.h3>
           <div className="bg-gradient-to-bl from-[rgba(1,87,218,0.15)] to-[rgba(0,0,0,0.01)]  flex flex-col justify-center md:flex-row md:justify-around drop-shadow-2xl items-center">

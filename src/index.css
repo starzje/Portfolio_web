@@ -11,3 +11,7 @@ body {
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
 }
+
+.fullheight {
+  height: calc(var(--vh, 1vh) * 100);
+}

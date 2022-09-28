@@ -44,7 +44,7 @@ const Hero = ({ fullpageApi }) => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
               exit={{ opacity: 0, x: "100vw" }}
-              className="absolute -right-0 mobile-fix  overflow-hidden w-screen h-[100%] md:h-screen overflow-y-auto bg-slate-900 bg-opacity-100 z-10">
+              className="fixed  -right-0 mobile-fix   w-screen fullheight md:h-screen overflow-hidden bg-slate-900 bg-opacity-100 z-[100]  border-2 border-red-500">
               <div className=" flex flex-col items-center justify-center h-full">
                 {menu.map((item) => (
                   <motion.li
