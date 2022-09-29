@@ -9,13 +9,14 @@ const pluginWrapper = () => {
   require("./fullpage.parallax.min");
 };
 
-const mobileScreen = window.innerWidth < 768 ? true : false;
+// const mobileScreen = window.innerWidth < 768 ? true : false;
 
 const App = () => (
   <ReactFullpage
-    responsiveWidth={750}
+    // responsiveWidth={750}
     pluginWrapper={pluginWrapper}
-    parallax={mobileScreen ? false : true}
+    // parallax={mobileScreen ? false : true}
+    parallax={true}
     verticalCentered={false}
     parallaxOptions={{
       type: "cover",
