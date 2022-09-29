@@ -2,18 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  height: 100%;
+html {
   background-color: #120c5c;
-  position: fixed;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
+  overflow: hidden;
+  width: 100%;
+}
 
-  -webkit-overflow-scrolling: touch;
-  overflow-x: hidden;
-  overflow-y: hidden;
+body {
+  body {
+    height: 100%;
+    position: fixed;
+    /* prevent overscroll bounce*/
+    background-color: #120c5c;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    /* iOS velocity scrolling */
+  }
 }
 
 .scrollDown {
