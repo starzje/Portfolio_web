@@ -11,6 +11,8 @@ const pluginWrapper = () => {
 
 const App = () => (
   <ReactFullpage
+    // responsiveWidth={900}
+
     pluginWrapper={pluginWrapper}
     parallax={true}
     verticalCentered={false}
