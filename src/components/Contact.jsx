@@ -4,7 +4,7 @@ import { contactTitle } from "../helpers/animations";
 
 const Contact = () => {
   return (
-    <section className="section bg-[url('./assets/footer_bg.png')]  bg-cover md:bg-contain bg-no-repeat  bg-center md:bg-right-bottom bg-[#140057] min-h-screen   ">
+    <section className="section bg-[url('./assets/footer_bg.png')]  bg-cover md:bg-contain bg-no-repeat  bg-center md:bg-right-bottom bg-[#140057] min-h-full md:min-h-screen   ">
       <div className="container flex flex-col justify-center items-start h-screen ">
         <motion.h3
           variants={contactTitle}

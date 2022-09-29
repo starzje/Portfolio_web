@@ -32,7 +32,7 @@ const Projects = () => {
   return (
     <section
       className="section relative fp-auto-height 
-    bg-bg-pattern   min-h-screen  bg-contain bg-left-top bg-no-repeat ">
+    bg-bg-pattern  min-h-full  md:min-h-screen  bg-contain bg-left-top bg-no-repeat ">
       <motion.a
         variants={githubCTA}
         initial="hidden"
@@ -49,7 +49,7 @@ const Projects = () => {
         </motion.span>
       </motion.a>
 
-      <div className="flex h-screen justify-center items-center">
+      <div className="flex h-full  md:h-screen justify-center items-center">
         <div className="container mt-0 md:mt-10  ">
           <motion.h3
             variants={projectTitle}
