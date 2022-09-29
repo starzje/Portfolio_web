@@ -12,6 +12,7 @@ html {
 
 body {
   background-color: #120c5c;
+  min-width: 1150px;
   /* height: 100%;
   position: fixed;
   bottom: -0.5px;
