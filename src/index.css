@@ -4,6 +4,7 @@
 
 body {
   background-color: #120c5c;
+  overflow: hidden;
 }
 
 .scrollDown {
