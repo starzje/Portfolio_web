@@ -10,6 +10,10 @@ html {
 
 body {
   height: 100%;
+  top: 0.5px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   position: fixed;
   /* prevent overscroll bounce*/
   background-color: #120c5c;
