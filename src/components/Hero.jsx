@@ -102,7 +102,7 @@ const Hero = ({ fullpageApi }) => {
                   initial="hidden"
                   whileInView="visible"
                   className="bg-[#1F1CA1] hover:bg-[#2826b0] inline-block font-semibold text-center text-2xl  py-2 px-5 text-white rounded-2xl tracking-wider"
-                  href="https://drive.google.com/file/d/1xVG4SlV-Ud-008cWq5dzTNgmxHylGeQ5/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1Q2_cR4nvdVvyoEic-UHNGC7psxhWSkh0/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer">
                   Download CV
@@ -179,7 +179,7 @@ const Hero = ({ fullpageApi }) => {
             whileTap={{ scale: 0.95 }}
             transition={{ duration: 0.3 }}
             className="bg-black   hidden md:flex font-semibold   py-2 px-5 text-white rounded-xl tracking-wider justify-center items-center gap-2"
-            href="https://drive.google.com/file/d/1xVG4SlV-Ud-008cWq5dzTNgmxHylGeQ5/view?usp=sharing"
+            href="https://drive.google.com/file/d/1Q2_cR4nvdVvyoEic-UHNGC7psxhWSkh0/view?usp=sharing"
             target="_blank"
             rel="noreferrer">
             <AiOutlineCloudDownload className="text-lg" />
