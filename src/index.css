@@ -3,23 +3,22 @@
 @tailwind utilities;
 
 html {
-  background-color: #120c5c;
+  /* background-color: #120c5c;
   overflow: hidden;
-  width: 100%;
+  width: 100%; */
 }
 
 body {
-  height: 100%;
+  background-color: #120c5c;
+  /* height: 100%;
   top: 0.5px;
   left: 0;
   right: 0;
   bottom: 0;
   position: fixed;
-  /* prevent overscroll bounce*/
-  background-color: #120c5c;
+
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  /* iOS velocity scrolling */
+  -webkit-overflow-scrolling: touch; */
 }
 
 .scrollDown {
@@ -30,14 +29,4 @@ body {
 
 .fullheight {
   height: calc(var(--vh, 1vh) * 100);
-}
-
-.wrapper {
-  position: absolute;
-  top: 0.5px;
-  left: 0;
-  right: 0;
-  bottom: 0.5px;
-  overflow-x: hidden; /* or any other value */
-  overflow-y: auto; /* or any other value */
 }
