@@ -3,8 +3,17 @@
 @tailwind utilities;
 
 body {
+  height: 100%;
   background-color: #120c5c;
-  overflow: hidden;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .scrollDown {

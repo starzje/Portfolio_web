@@ -38,7 +38,7 @@ const Hero = ({ fullpageApi }) => {
       variants={mainSectionAnimation}
       initial="hidden"
       animate="visible"
-      className=" fp-bg absolute overflow-y-hidden mobile-fix  section h-[100%] md:h-screen  bg-[#120C5C] bg-hero-pattern2 bg-cover bg-center bg-no-repeat top-[0.5px]">
+      className=" fp-bg m-0  fixed md:relative overflow-y-hidden mobile-fix  section h-[100%] md:h-screen  bg-[#120C5C] bg-hero-pattern2 bg-cover bg-center bg-no-repeat top-[0.5px]">
       <div className="fp-bg bg-hero-pattern2 bg-cover   2xl:bg-contain  bg-center 2xl:bg-center md:bg-right "></div>
       <div className="inline-block md:hidden absolute top-2 right-2 z-50 ">
         <Hamburger color="#fff" toggled={isOpen} toggle={setOpen} />
