@@ -13,7 +13,7 @@ body {
   position: fixed;
   /* prevent overscroll bounce*/
   background-color: #120c5c;
-  overflow-y: auto;
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   /* iOS velocity scrolling */
 }
