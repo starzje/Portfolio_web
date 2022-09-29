@@ -3,22 +3,19 @@
 @tailwind utilities;
 
 html {
-  /* background-color: #120c5c;
+  background-color: #120c5c;
   overflow: hidden;
-  width: 100%; */
+  width: 100%;
 }
 
 body {
   background-color: #120c5c;
-  /* height: 100%;
-  top: 0.5px;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  height: 100%;
+
   position: fixed;
 
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch; */
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .scrollDown {
