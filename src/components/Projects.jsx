@@ -56,7 +56,7 @@ const Projects = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-[2rem] md:text-5xl pt-10 md:pt-0  text-white font-bold pb-2 md:pb-7">
+            className="text-[2rem] md:text-5xl  md:pt-0  text-white font-bold  md:pb-7">
             Featured Project
           </motion.h3>
           <div className="bg-gradient-to-bl from-[rgba(1,87,218,0.15)] to-[rgba(0,0,0,0.01)]  flex flex-col justify-center md:flex-row md:justify-around drop-shadow-2xl items-center">
@@ -78,7 +78,7 @@ const Projects = () => {
               whileInView="visible"
               viewport={{ once: true }}
               className="w-full md:w-1/2  border-l-4 px-6  border-opacity-20 border-blue-600">
-              <h3 className="text-white text-[1.5rem] md:text-3xl mb-6 font-bold">
+              <h3 className="text-white text-[1.5rem] md:text-3xl font-bold">
                 Chattam - Chat App
               </h3>
               <p className="text-white text-[1rem] md:text-1.2xl mb-6">
@@ -95,7 +95,7 @@ const Projects = () => {
                     key={tech.icon}
                   />
                 ))}
-                <li className="flex items-center  select-none gap-2 py-1 px-3 rounded-xl text-white bg-[rgba(107,77,255,0.17)] text-[0.75rem] md:text-[0.9rem] ">
+                <li className="flex items-center  select-none gap-2  rounded-xl text-white bg-[rgba(107,77,255,0.17)] text-[0.75rem] md:text-[0.9rem] ">
                   <img
                     src="./assets/fmotion.svg"
                     alt="icon for framerMotion"
@@ -104,7 +104,7 @@ const Projects = () => {
                   <span>FramerMotion</span>
                 </li>
               </ul>
-              <div className="flex gap-3 md:gap-10 items-center mt-8">
+              <div className="flex gap-3 md:gap-10 items-center ">
                 <motion.a
                   whileHover={{
                     scale: 1.03,
@@ -115,7 +115,7 @@ const Projects = () => {
                   href="https://chattam.online"
                   target="_blank"
                   rel="noreferrer"
-                  className="bg-[#1F1CA1] w-full text-white rounded-xl py-1.5 px-5  font-bold text-[0.9rem] text-center md:text-[1rem] whitespace-nowrap flex justify-center items-center gap-2">
+                  className="bg-[#1F1CA1] w-full text-white rounded-xl font-bold text-[0.9rem] text-center md:text-[1rem] whitespace-nowrap flex justify-center items-center gap-2">
                   <FiExternalLink /> View Project
                 </motion.a>
                 <motion.a
@@ -128,7 +128,7 @@ const Projects = () => {
                   href="https://github.com/starzje/ChatTam-Chat-App"
                   target="_blank"
                   rel="noreferrer"
-                  className="bg-[#1F1CA1]  w-full text-white text-center rounded-xl py-1.5 px-5  font-bold text-[0.9rem] md:text-[1rem]  flex  whitespace-nowrap justify-center items-center gap-2">
+                  className="bg-[#1F1CA1]  w-full text-white text-center rounded-xl  font-bold text-[0.9rem] md:text-[1rem]  flex  whitespace-nowrap justify-center items-center gap-2">
                   <BiCodeAlt /> View Code
                 </motion.a>
               </div>
