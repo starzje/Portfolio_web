@@ -1,29 +1,22 @@
+import { motion } from "framer-motion";
+import Form from "./Form";
+import { contactTitle } from "../helpers/animations";
+
 const Contact = () => {
   return (
-    <div>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
-      dolorum, perspiciatis velit in illum cumque explicabo suscipit ratione
-      aliquam maiores provident iusto ipsa. Ut odio magni velit excepturi
-      corrupti ratione voluptas, sunt repellendus pariatur distinctio quas neque
-      libero voluptatum non architecto reprehenderit necessitatibus accusamus,
-      vero ullam assumenda molestias. Dolorem maxime quam doloribus veritatis
-      eos, at et natus possimus sint adipisci modi harum similique ut corporis
-      ab temporibus quisquam sunt quas praesentium? Temporibus aut accusantium
-      ut in pariatur neque maiores dicta voluptatum molestiae, doloribus non.
-      Dolor eum praesentium eaque eligendi? Harum aliquam hic fugit maiores.
-      Officiis amet ut neque magnam minima nobis fuga dolorum! Nobis repellendus
-      quas expedita fugiat quibusdam iusto blanditiis velit tempore dolore
-      similique atque maxime sunt magni consequuntur quae architecto adipisci
-      voluptatem id, magnam, minus sapiente suscipit, cupiditate cum? Autem
-      magnam iure accusamus, suscipit nulla facilis, voluptatum quas unde
-      deserunt vitae atque ratione commodi beatae repudiandae tenetur molestiae
-      odit inventore at laborum, libero voluptate dolor totam id. Nam distinctio
-      officia ad tempore ratione eius et est vel perspiciatis, fuga provident
-      accusantium quibusdam autem quas accusamus libero quia, nesciunt
-      reiciendis dolore totam architecto explicabo sapiente dolorum? Quo
-      molestias vitae sapiente architecto aspernatur sequi. Aperiam a quae
-      beatae harum maiores!
-    </div>
+    <section className="section bg-[url('./assets/footer_bg.png')]  bg-cover md:bg-contain bg-no-repeat  bg-center md:bg-right-bottom bg-[#140057] min-h-full md:min-h-screen   ">
+      <div className="container flex flex-col justify-center items-start h-screen ">
+        <motion.h3
+          variants={contactTitle}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="text-[2rem] md:text-5xl text-white font-bold mb-2">
+          Like what you see?
+        </motion.h3>
+        <Form />
+      </div>
+    </section>
   );
 };
 
