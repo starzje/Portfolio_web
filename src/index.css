@@ -9,15 +9,13 @@ html {
 }
 
 body {
-  body {
-    height: 100%;
-    position: fixed;
-    /* prevent overscroll bounce*/
-    background-color: #120c5c;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    /* iOS velocity scrolling */
-  }
+  height: 100%;
+  position: fixed;
+  /* prevent overscroll bounce*/
+  background-color: #120c5c;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  /* iOS velocity scrolling */
 }
 
 .scrollDown {
@@ -28,4 +26,14 @@ body {
 
 .fullheight {
   height: calc(var(--vh, 1vh) * 100);
+}
+
+.wrapper {
+  position: absolute;
+  top: 0.5px;
+  left: 0;
+  right: 0;
+  bottom: 0.5px;
+  overflow-x: hidden; /* or any other value */
+  overflow-y: auto; /* or any other value */
 }
