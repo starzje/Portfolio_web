@@ -31,8 +31,8 @@ const About = () => {
               <span className="text-[#F9A826] font-bold tracking-wider">
                 Development:
               </span>{" "}
-              JavaScript, React, Redux, TailwindCSS, Firebase, Framer Motion,
-              Git.
+              TypeScript, React, Next.js, Redux, TailwindCSS, SASS, Firebase,
+              Framer Motion, Git, Webpack.
               <br />
               <br />
               <span className="text-[#F9A826] font-bold tracking-wider">
